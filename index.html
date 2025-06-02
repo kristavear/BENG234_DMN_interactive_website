@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Psychedelics & the Default Mode Network</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fdf8ff;
+      color: #333;
+    }
+    header {
+      background: #e3d7f4;
+      padding: 2rem;
+      text-align: center;
+    }
+    h1 {
+      color: #7f5ca3;
+    }
+    section {
+      padding: 2rem;
+    }
+    .diagram-container {
+      position: relative;
+      width: 300px;
+      height: auto;
+      margin: 2rem auto;
+    }
+    .diagram-container img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      transition: opacity 0.5s ease-in-out;
+      border: 2px solid #b2f0e4;
+      border-radius: 10px;
+    }
+    .slider-container {
+      margin: 3rem 0;
+      text-align: center;
+    }
+    input[type="range"] {
+      width: 80%;
+    }
+    .output {
+      font-size: 1.5rem;
+      color: #7f5ca3;
+      margin-top: 1rem;
+    }
+    footer {
+      background: #e3d7f4;
+      padding: 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+    .references {
+      margin-top: 2rem;
+    }
+    #refToggle {
+      background-color: #b2f0e4;
+      color: #333;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    #refToggle:hover {
+      background-color: #a0e4d6;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Psychedelics & the Default Mode Network</h1>
+    <p>An Interactive Exploration of Brain Connectivity</p>
+  </header>
+
+  <section>
+    <h2>What is the Default Mode Network?</h2>
+    <p>The Default Mode Network (DMN) is a set of interconnected brain regions that are active when the mind is at rest, not focused on the outside world. 
+      It's associated with self-reflection, daydreaming, and the sense of self. It was discovered through modern brain imaging where researchers saw that there are a set of brain regions in the parietal, frontal and temporal cortex that show a decrease in activity during activities that enlist a high level of attention. After further research, these regions of the brain have been named the default mode network because they are activated during a default, baseline state, in which there is not demand for attention. 
+      <p>In addition to being linked to a state of "default" cognition, researchers have found the the DMN play a role in memory and our sense of identity. There are multiple studies that explore the link between the DMN and conceptual processing of our 'sense of self'. Due to the nature of the DMN, its been suggested that it takes on roles that are less directly influenced by our external environment.
+      <p>The DMN is also being explored for its role in higher-order cognition, including moral judgement, empathetic responses, aesthetic judgement, spatial navigation, reward-based decision making, and more. Studies have shown that alterations in activity in the DMN can reflect cognition changes during a task, indicating a strong relationship to overall cognition.</p> 
+      
+  <section>
+    <h2>What are psychedelics and how are they related to the DMN?</h2>
+    <p>Given our newfound knowledge on a mechanism involved in introspection and sense of self, researchers have been increasingly interested in how psychedelics may impact the DMN, giving rise to a new area of research.</p>
+    <p>So what exactly are psychelics? Psychedelics are a class of drug that </p>
+  </section>
+    <div class="diagram-container">
+      <img src="dmn-normal.png" alt="Normal DMN" id="normalImg" style="opacity: 1; z-index: 1;" />
+      <img src="dmn-psychedelics.png" alt="Psychedelics DMN" id="psyImg" style="opacity: 0; z-index: 2;" />
+    </div>
+  </section>
+
+  <section>
+    <h2>Explore Brain Activity</h2>
+    <p>Use the slider to simulate changes in connectivity when under psychedelics:</p>
+    <div class="slider-container">
+      <input type="range" id="activitySlider" min="0" max="100" value="0" />
+      <div class="output" id="activityOutput">Connectivity: 0%</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Key Takeaways</h2>
+    <ul>
+      <li>Psychedelics reduce activity in the DMN, which is associated with ego dissolution.</li>
+      <li>This leads to increased global brain connectivity and a sense of unity.</li>
+      <li>These effects may underlie therapeutic benefits in depression, PTSD, and addiction.</li>
+    </ul>
+  </section>
+
+  <footer>
+    Created for BENG 234 - a neurophysiology course | Visuals adapted from research literature
+    <div class="references">
+      <button id="refToggle">Show References ▼</button>
+      <ul id="refList" style="display: none; margin-top: 1rem;">
+        <li>Gattuso JJ, Perkins D, Ruffell S, Lawrence AJ, Hoyer D, Jacobson LH,
+Timmermann C, Castle D, Rossell SL, Downey LA, Pagni BA, Galvão-Coelho NL,
+Nutt D, Sarris J. Default Mode Network Modulation by Psychedelics: A
+Systematic Review. Int J Neuropsychopharmacol. 2023 Mar 22;26(3):155-188.
+doi: 10.1093/ijnp/pyac074. PMID: 36272145; PMCID: PMC10032309.</li>
+      <li>Soares C, Gonzalo G, Castelhano J, Castelo-Branco M. The relationship between
+the default mode network and the theory of mind network as revealed by
+psychedelics - A meta-analysis. Neurosci Biobehav Rev. 2023 Sep;152:105325.
+doi: 10.1016/j.neubiorev.2023.105325. Epub 2023 Jul 17. PMID: 37467907.</li>
+      <li>Nichols DE. Psychedelics. Pharmacol Rev. 2016 Apr;68(2):264-355. doi:
+10.1124/pr.115.011478. Erratum in: Pharmacol Rev. 2016 Apr;68(2):356. doi:
+10.1124/pr.114.011478err. PMID: 26841800; PMCID: PMC4813425.</li>
+<li>Menon V. 20 years of the default mode network: A review and synthesis. Neuron.
+2023 Aug 16;111(16):2469-2487. doi: 10.1016/j.neuron.2023.04.023. Epub 2023
+May 10. PMID: 37167968; PMCID: PMC10524518.</li>
+<li>Smallwood J, Bernhardt BC, Leech R, Bzdok D, Jefferies E, Margulies DS. The
+default mode network in cognition: a topographical perspective. Nat Rev
+Neurosci. 2021 Aug;22(8):503-513. doi: 10.1038/s41583-021-00474-4. Epub
+2021 Jul 5. PMID: 34226715.</li>
+<li>Yeshurun Y, Nguyen M, Hasson U. The default mode network: where the
+idiosyncratic self meets the shared social world. Nat Rev Neurosci. 2021
+Mar;22(3):181-192. doi: 10.1038/s41583-020-00420-w. Epub 2021 Jan 22. PMID:
+33483717; PMCID: PMC7959111.</li>
+<li>Ling S, Ceban F, Lui LMW, Lee Y, Teopiz KM, Rodrigues NB, Lipsitz O, Gill H,
+Subramaniapillai M, Mansur RB, Lin K, Ho R, Rosenblat JD, Castle D, McIntyre RS.
+Molecular Mechanisms of Psilocybin and Implications for the Treatment of
+Depression. CNS Drugs. 2022 Jan;36(1):17-30. doi:
+10.1007/s40263-021-00877-y. Epub 2021 Nov 17. PMID: 34791625.</li>
+<li>Siegel JS, Subramanian S, Perry D, Kay BP, Gordon EM, Laumann TO, Reneau TR,
+Metcalf NV, Chacko RV, Gratton C, Horan C, Krimmel SR, Shimony JS, Schweiger
+JA, Wong DF, Bender DA, Scheidter KM, Whiting FI, Padawer-Curry JA, Shinohara
+RT, Chen Y, Moser J, Yacoub E, Nelson SM, Vizioli L, Fair DA, Lenze EJ,
+Carhart-Harris R, Raison CL, Raichle ME, Snyder AZ, Nicol GE, Dosenbach NUF.
+Psilocybin desynchronizes the human brain. Nature. 2024
+Aug;632(8023):131-138. doi: 10.1038/s41586-024-07624-5. Epub 2024 Jul 17.
+PMID: 39020167; PMCID: PMC11291293.</li>
+<li>Carhart-Harris RL, Roseman L, Bolstridge M, Demetriou L, Pannekoek JN, Wall
+MB, Tanner M, Kaelen M, McGonigle J, Murphy K, Leech R, Curran HV, Nutt DJ.
+Psilocybin for treatment-resistant depression: fMRI-measured brain
+mechanisms. Sci Rep. 2017 Oct 13;7(1):13187. doi:
+10.1038/s41598-017-13282-7. PMID: 29030624; PMCID: PMC5640601.</li>
+<li>Reinwald JR, Schmitz CN, Skorodumov I, Kuchar M, Weber-Fahr W, Spanagel R,
+Meinhardt MW. Psilocybin-induced default mode network hypoconnectivity is
+blunted in alcohol-dependent rats. Transl Psychiatry. 2023 Dec 14;13(1):392. doi:
+10.1038/s41398-023-02690-1. PMID: 38097569; PMCID: PMC10721862.</li>
+<li>Yu Z, Burback L, Winkler O, Xu L, Dennett L, Vermetten E, Greenshaw A, Li XM,
+Milne M, Wang F, Cao B, Winship IR, Zhang Y, Chan AW. Alterations in brain
+network connectivity and subjective experience induced by psychedelics: a
+scoping review. Front Psychiatry. 2024 May 14;15:1386321. doi:
+10.3389/fpsyt.2024.1386321. PMID: 38807690; PMCID: PMC11131165.</li>
+<li>Smigielski L, Scheidegger M, Kometer M, Vollenweider FX. Psilocybin-assisted
+mindfulness training modulates self-consciousness and brain default mode
+network connectivity with lasting effects. Neuroimage. 2019 Aug 1;196:207-215.
+doi: 10.1016/j.neuroimage.2019.04.009. Epub 2019 Apr 6. PMID: 30965131.</li>
+<li>Mograbi DC, Rodrigues R, Bienemann B, Huntley J. Brain Networks,
+Neurotransmitters and Psychedelics: Towards a Neurochemistry of
+Self-Awareness. Curr Neurol Neurosci Rep. 2024 Aug;24(8):323-340. doi:
+10.1007/s11910-024-01353-y. Epub 2024 Jul 9. PMID: 38980658; PMCID:
+PMC11258181.</li>
+<li>Bossong MG, Jansma JM, van Hell HH, Jager G, Kahn RS, Ramsey NF. Default
+mode network in the effects of Δ9-Tetrahydrocannabinol (THC) on human
+executive function. PLoS One. 2013 Jul 31;8(7):e70074. doi:
+10.1371/journal.pone.0070074. PMID: 23936144; PMCID: PMC3729458.</li>
+<li>Whitfield-Gabrieli S, Fischer AS, Henricks AM, Khokhar JY, Roth RM, Brunette MF,
+Green AI. Understanding marijuana's effects on functional connectivity of the
+default mode network in patients with schizophrenia and co-occurring cannabis
+use disorder: A pilot investigation. Schizophr Res. 2018 Apr;194:70-77. doi:
+10.1016/j.schres.2017.07.029. Epub 2017 Aug 18. PMID: 28823723; PMCID:
+PMC6886576.</li>
+<li>Palhano-Fontes F, Andrade KC, Tofoli LF, Santos AC, Crippa JA, Hallak JE, Ribeiro
+S, de Araujo DB. The psychedelic state induced by ayahuasca modulates the
+activity and connectivity of the default mode network. PLoS One. 2015 Feb
+18;10(2):e0118143. doi: 10.1371/journal.pone.0118143. PMID: 25693169;
+PMCID: PMC4334486.</li>
+<li>Martin DA, Nichols CD. The Effects of Hallucinogens on Gene Expression. Curr
+Top Behav Neurosci. 2018;36:137-158. doi: 10.1007/7854_2017_479. PMID:
+28677095.</li>
+<li>Siegel JS, Subramanian S, Perry D, Kay B, Gordon E, Laumann T, Reneau R,
+Gratton C, Horan C, Metcalf N, Chacko R, Schweiger J, Wong D, Bender D,
+Padawer-Curry J, Raison C, Raichle M, Lenze EJ, Snyder AZ, Dosenbach NUF,
+Nicol G. Psilocybin desynchronizes brain networks. medRxiv [Preprint]. 2023 Aug
+24:2023.08.22.23294131. doi: 10.1101/2023.08.22.23294131. Update in: Nature.
+2024 Aug;632(8023):131-138. doi: 10.1038/s41586-024-07624-5. PMID:
+37701731; PMCID: PMC10493007.</li>
+<li>Pasquini L, Palhano-Fontes F, Araujo DB. Subacute effects of the psychedelic
+ayahuasca on the salience and default mode networks. J Psychopharmacol.
+2020 Jun;34(6):623-635. doi: 10.1177/0269881120909409. Epub 2020 Apr 7.
+PMID: 32255395.</li>
+<li>Császár-Nagy N, Kapócs G, Bókkon I. Classic psychedelics: the special role of the
+visual system. Rev Neurosci. 2019 Jul 26;30(6):651-669. doi:
+10.1515/revneuro-2018-0092. PMID: 30939118.</li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    const slider = document.getElementById('activitySlider');
+    const output = document.getElementById('activityOutput');
+    const normalImg = document.getElementById('normalImg');
+    const psyImg = document.getElementById('psyImg');
+
+    slider.addEventListener('input', () => {
+      const val = slider.value;
+      output.textContent = `Connectivity: ${val}%`;
+      const opacity = val / 100;
+      psyImg.style.opacity = opacity;
+      normalImg.style.opacity = 1 - opacity;
+    });
+
+    const refToggle = document.getElementById('refToggle');
+    const refList = document.getElementById('refList');
+
+    refToggle.addEventListener('click', () => {
+      if (refList.style.display === 'none') {
+        refList.style.display = 'block';
+        refToggle.textContent = 'Hide References ▲';
+      } else {
+        refList.style.display = 'none';
+        refToggle.textContent = 'Show References ▼';
+      }
+    });
+  </script>
+</body>
+</html>
