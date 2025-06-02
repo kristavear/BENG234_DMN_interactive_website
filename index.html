@@ -10,7 +10,7 @@
       margin: 0;
       padding: 0;
       background: #fdf8ff;
-      color: #333;
+      color: #555454;
     }
     header {
       background: #e3d7f4;
@@ -20,13 +20,17 @@
     h1 {
       color: #7f5ca3;
     }
+    h2 {
+      color: #48abbd
+    }
     section {
       padding: 2rem;
+      text-align: center;
     }
     .diagram-container {
       position: relative;
       width: 300px;
-      height: auto;
+      height: 300px;
       margin: 2rem auto;
     }
     .diagram-container img {
@@ -78,18 +82,34 @@
     <h1>Psychedelics & the Default Mode Network</h1>
     <p>An Interactive Exploration of Brain Connectivity</p>
   </header>
-
+  <section>
+    <h2>Key Takeaways</h2>
+    <ul>
+      <p>Psychedelics reduce activity in the DMN, which is associated with ego dissolution.</p>
+      <p>This leads to increased global brain connectivity and a sense of unity.</p>
+      <p>These effects may underlie therapeutic benefits in depression, PTSD, and addiction.</p>
+    </ul>
+  </section>
+  
   <section>
     <h2>What is the Default Mode Network?</h2>
     <p>The Default Mode Network (DMN) is a set of interconnected brain regions that are active when the mind is at rest, not focused on the outside world. 
       It's associated with self-reflection, daydreaming, and the sense of self. It was discovered through modern brain imaging where researchers saw that there are a set of brain regions in the parietal, frontal and temporal cortex that show a decrease in activity during activities that enlist a high level of attention. After further research, these regions of the brain have been named the default mode network because they are activated during a default, baseline state, in which there is not demand for attention. 
       <p>In addition to being linked to a state of "default" cognition, researchers have found the the DMN play a role in memory and our sense of identity. There are multiple studies that explore the link between the DMN and conceptual processing of our 'sense of self'. Due to the nature of the DMN, its been suggested that it takes on roles that are less directly influenced by our external environment.
       <p>The DMN is also being explored for its role in higher-order cognition, including moral judgement, empathetic responses, aesthetic judgement, spatial navigation, reward-based decision making, and more. Studies have shown that alterations in activity in the DMN can reflect cognition changes during a task, indicating a strong relationship to overall cognition.</p> 
-      
   <section>
     <h2>What are psychedelics and how are they related to the DMN?</h2>
     <p>Given our newfound knowledge on a mechanism involved in introspection and sense of self, researchers have been increasingly interested in how psychedelics may impact the DMN, giving rise to a new area of research.</p>
-    <p>So what exactly are psychelics? Psychedelics are a class of drug that </p>
+    <p>So what exactly are psychedelics? Psychedelics are a group of psychoactive substances that alter consciousness, perception, and cognition, often producing vivid sensory experiences and changes in thought patterns. Classic psychedelics such as psilocybin (found in "magic mushrooms"), LSD, and DMT primarily work by activating serotonin 5-HT2A receptors in the brain. One of the most studied effects of psychedelics is their impact on large-scale brain networks, particularly the Default Mode Network (DMN).</p> <p>Research using functional magnetic resonance imaging (fMRI) has shown that psychedelics reduce connectivity and activity within the DMN. One study found that psilocybin decreased blood flow and neural activity in key area of the DMN. Later studies confirmed that LSD and psilocybin lead to a temporary disintegration of DMN coherence, which is thought to correlate with "ego dissolution", a feeling of losing the boundary between self and world. This phenomenon is not only central to the psychedelic experience but is also believed to play a role in their therapeutic potential. For example, reductions in rigid DMN activity may help "reset" dysfunctional patterns seen in depression, anxiety, and PTSD. Emerging clinical trials support the idea that psychedelics can promote psychological flexibility and emotional healing, in part by disrupting maladaptive DMN activity and enhancing connectivity between normally segregated brain networks. </p>
+  <section>
+    <h2>Explore Brain Activity With and Without Psychedelics</h2>
+    <p>Use the slider to simulate changes in connectivity when under psychedelics:</p>
+    <div class="slider-container">
+      <input type="range" id="activitySlider" min="0" max="100" value="0" />
+      <div class="output" id="activityOutput">Connectivity: 0%</div>
+    </div>
+  </section>
+
   </section>
     <div class="diagram-container">
       <img src="dmn-normal.png" alt="Normal DMN" id="normalImg" style="opacity: 1; z-index: 1;" />
@@ -98,22 +118,15 @@
   </section>
 
   <section>
-    <h2>Explore Brain Activity</h2>
-    <p>Use the slider to simulate changes in connectivity when under psychedelics:</p>
-    <div class="slider-container">
-      <input type="range" id="activitySlider" min="0" max="100" value="0" />
-      <div class="output" id="activityOutput">Connectivity: 0%</div>
-    </div>
+    <h2>Open Questions for Additional Research Exploration</h2>
+    <p>How does DMN activity vary across different psychedelics (e.g., LSD vs. psilocybin)?<p/>
+    <p>Are long-term DMN changes beneficial or risky?<p/>
+    <p>Can DMN modulation be targeted without psychedelics?</p>
   </section>
 
-  <section>
-    <h2>Key Takeaways</h2>
-    <ul>
-      <li>Psychedelics reduce activity in the DMN, which is associated with ego dissolution.</li>
-      <li>This leads to increased global brain connectivity and a sense of unity.</li>
-      <li>These effects may underlie therapeutic benefits in depression, PTSD, and addiction.</li>
-    </ul>
-  </section>
+
+
+
 
   <footer>
     Created for BENG 234 - a neurophysiology course | Visuals adapted from research literature
